@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function Login() {
   const [data, setData] = useState({
@@ -69,6 +69,11 @@ export function Login() {
           />
           <span>Ricordami</span>
         </label>
+        <p>
+          <code>
+            <pre> The data is: {JSON.stringify(data)}</pre>
+          </code>
+        </p>
         {/* Metodo Normale */}
         {/* {data.password === "" || data.username === "" ? (
             <button id="submit" type="submit" disabled>
